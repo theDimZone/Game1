@@ -1,3 +1,5 @@
+Develop ветка с доступом для таджиков
+
 # Welcome to Defold
 
 This project was created from the "desktop" project template. This means that the settings in ["game.project"](defold://open?path=/game.project) have been changed to be suitable for a desktop game:
