@@ -1,4 +1,4 @@
-Develop ветка с доступом для таджиков
+﻿Develop ветка с доступом для таджиков
 
 # Welcome to Defold
 
@@ -19,3 +19,8 @@ If you run into trouble, help is available in [our forum](https://forum.defold.c
 Happy Defolding!
 
 ---
+
+Пункты ТЗ:
+1-Создание объекта поля
+2-Создания объекта игока
+3-Перемещение игрока по полю
