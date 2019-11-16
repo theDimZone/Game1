@@ -1,19 +1,37 @@
+﻿Develop ветка с доступом для таджиков
+
 # Welcome to Defold
-
-This project was created from the "desktop" project template. This means that the settings in ["game.project"](defold://open?path=/game.project) have been changed to be suitable for a desktop game:
-
-- The screen size is set to 1280x720
-- Projection is set to Fixed Fit
-- macOS and Windows icons are set
-- Mouse clicks are bound to action "touch"
-- A simple script in a game object is set up to receive and react to input
-
-[Build and run](defold://build) to see it in action. You can of course alter these settings to fit your needs.
-
 Check out [the documentation pages](https://defold.com/learn) for examples, tutorials, manuals and API docs.
 
-If you run into trouble, help is available in [our forum](https://forum.defold.com).
-
-Happy Defolding!
 
 ---
+
+Описание
+
+Игровой процесс:
+В игровой сессии 8 игроков. Каждый игрок играет против всех.
+Жанр - 2д шутер с видом сверху. Игроки продвигаются по месту в списке победителей в сессии с помощью гонки вооружений (как в кс).
+Победа происходит при достижении последнего убийства с последнего оружия. При этом игровая сессия заканчивается.
+
+Игровое поле в сессии:
+2д карта с объектами для укрытий и взаимодействий.
+Масштаб карты учитывается так, что игрок может пробежать от одной стороны карты до другой максимум за 10 секунд.
+
+Игрок в сессии:
+Имеет 100 хп. У всех изначально одинаковые хар-ки скорости передвижения и т.д. Но они меняются с изменением оружия.
+
+Оружия в игре:
+1 ур. Пистолет пулемет UMP - большой разброс, маленькая точность и маленький урон. Средний магазин.
+2 ур. Калаш - средний разброс, средняя точность и высокий урон. Средний магазин.
+3 ур. Auto Sniper - маленький разброс, высокая точность и высокий урон. Маленький магазин.
+
+Процесс гонки вооружений:
+После каждых 3 убийств увеличивается уровень оружия.
+После 3 убийства на последнем уровне оружия игрок побеждает.
+
+Идеи:
+1) Пули летят обратно в игрока, который выстрелил их.
+2) Появляются мины на карте от которых нужно уворачиваться.
+3) Пули у какого то оружия или у всех летят с высокой скоростью, на порядки быстрее чем обычно.
+4) Разные этапы игры во время сессии. Например, в какой то определенный момент игры у всех игроков появляется механика 1), 2) или 3)
+
